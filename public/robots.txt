@@ -1,0 +1,37 @@
+# robots.txt for The Development Studio
+# https://www.devstudioco.com
+
+# Global rules for all crawlers
+User-agent: *
+Allow: /
+
+# Block sensitive or non-SEO endpoints
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /logs/
+
+# Block system or data files
+Disallow: /*.json$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.env$
+
+# Block search and parameter URLs (if used)
+Disallow: /*?*
+Allow: /*?page=
+
+# Allow important resources for rendering
+Allow: /assets/
+Allow: /static/
+Allow: /css/
+Allow: /js/
+Allow: /images/
+
+# Crawl control (respected mainly by Bing/Yandex)
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://www.devstudioco.com/sitemap.xml
