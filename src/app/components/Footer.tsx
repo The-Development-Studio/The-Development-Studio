@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Mail, Linkedin, Twitter, Github, Instagram, ArrowRight, Facebook, Youtube, MapPin, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import logo from '@/assets/logo.svg';
 
 export function Footer() {
   const footerLinks = {
@@ -141,9 +142,13 @@ export function Footer() {
                 className="lg:col-span-1"
               >
                 <div className="mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-br from-[#FF6600] to-[#FF8800] rounded-2xl flex items-center justify-center text-white font-bold text-xl mb-4">
-                    DS
-                  </div>
+                  <div className="mb-4">
+  <img
+    src={logo}
+    alt="The Development Studio logo"
+    className="w-14 h-14 object-contain"
+  />
+</div>
                   <h5 className="text-xl font-bold mb-2">The Development Studio</h5>
                   <p className="text-sm text-gray-400 leading-relaxed">
                     Crafting Dreams into Design. Your Vision, Our Artistry.

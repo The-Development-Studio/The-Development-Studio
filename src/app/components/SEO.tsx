@@ -15,13 +15,13 @@ export function SEO({
   title,
   description,
   keywords = 'web development, mobile apps, custom software, AI automation, digital solutions, software development company, app development, digital marketing, cyber security, graphical design',
-  ogImage = 'https://www.thedevelopmentstudio.com/og-image.jpg',
+  ogImage = 'https://www.devstudioco.com/og-image.jpg',
   ogType = 'website',
   canonical,
   noindex = false,
   schema
 }: SEOProps) {
-  const siteUrl = 'https://www.thedevelopmentstudio.com';
+  const siteUrl = 'https://www.devstudioco.com';
   const fullTitle = `${title} | The Development Studio`;
   const canonicalUrl = canonical || `${siteUrl}${window.location.pathname}`;
 
@@ -139,21 +139,21 @@ export const SEOData = {
       '@type': 'Organization',
       name: 'The Development Studio',
       description: 'A Digital Solution Company specializing in web development, mobile apps, custom software, AI automation, and digital marketing.',
-      url: 'https://www.thedevelopmentstudio.com',
-      logo: 'https://www.thedevelopmentstudio.com/logo.png',
+      url: 'https://www.devstudioco.com',
+      logo: 'https://www.devstudioco.com/logo.png',
       foundingDate: '2020',
       slogan: 'Crafting Dreams into Design. Your Vision, Our Artistry.',
       contactPoint: {
         '@type': 'ContactPoint',
-        telephone: '+1-555-123-4567',
+        telephone: '+91 8438028227',
         contactType: 'customer service',
-        email: 'hello@devstudio.com',
+        email: 'hello@devstudioco.com',
         availableLanguage: ['English']
       },
       address: {
         '@type': 'PostalAddress',
-        addressCountry: 'US',
-        addressLocality: 'Tech City'
+        addressCountry: 'IN',
+        addressLocality: 'Chennai'
       },
       sameAs: [
         'https://www.linkedin.com/company/devstudio',

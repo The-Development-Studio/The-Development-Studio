@@ -1,5 +1,6 @@
 import { motion, useAnimation } from 'motion/react';
 import { useEffect, useState, useRef } from 'react';
+import logo from '@/assets/logo.svg';
 
 interface LoadingScreenProps {
   onLoadingComplete: () => void;
@@ -594,20 +595,15 @@ export function LoadingScreen({ onLoadingComplete }: LoadingScreenProps) {
               }}
             />
 
-            <motion.span
-              className="relative text-white font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl z-10"
-              animate={{ 
-                scale: [1, 1.05, 1],
-                textShadow: [
-                  '0 0 10px rgba(255, 255, 255, 0.5)',
-                  '0 0 20px rgba(255, 255, 255, 0.8)',
-                  '0 0 10px rgba(255, 255, 255, 0.5)',
-                ]
-              }}
-              transition={{ duration: 2, repeat: Infinity }}
-            >
-              DS
-            </motion.span>
+            <motion.img
+  src={logo}
+  alt="The Development Studio"
+  className="relative w-10 h-10 sm:w-14 sm:h-14 md:w-20 md:h-20 z-10"
+  animate={{
+    scale: [1, 1.05, 1]
+  }}
+  transition={{ duration: 2, repeat: Infinity }}
+/>
 
             {/* Pulse Effect */}
             <motion.div

@@ -140,7 +140,8 @@ export function Header() {
           >
             <Link to="/" className="group flex items-center gap-2 md:gap-3">
               <motion.div 
-                className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 rounded-xl flex items-center justify-center relative overflow-hidden flex-shrink-0"
+  className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 flex items-center justify-center relative flex-shrink-0"
+
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.6 }}
               >
